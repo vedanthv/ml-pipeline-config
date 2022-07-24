@@ -104,7 +104,7 @@
 
   // ends here - custom util/ helper functions to generate dag
 
-  const data = [{"fillcolor": "#90EE90", "style": "filled", "fontname": "Helvetica", "fontsize": "16pt", "id": "clean", "label": "clean", "products": ["clean"]}, {"fillcolor": "#90EE90", "style": "filled", "fontname": "Helvetica", "fontsize": "16pt", "id": "visualize", "label": "visualize", "products": ["visualize"], "parentIds": ["clean"]}, {"fillcolor": "#F08080", "style": "dashed, filled", "fontname": "Helvetica", "fontsize": "16pt", "id": "train", "label": "train", "products": ["train"], "parentIds": ["clean"]}];
+  const data = [{"fillcolor": "#90EE90", "style": "filled", "fontname": "Helvetica", "fontsize": "16pt", "id": "clean", "label": "clean", "products": ["clean"]}, {"fillcolor": "#90EE90", "style": "filled", "fontname": "Helvetica", "fontsize": "16pt", "id": "visualize", "label": "visualize", "products": ["visualize"], "parentIds": ["clean"]}, {"fillcolor": "#90EE90", "style": "filled", "fontname": "Helvetica", "fontsize": "16pt", "id": "train", "label": "train", "products": ["train"], "parentIds": ["clean"]}];
   const dag = d3.dagStratify()(data);
 
   const nodeRadius = 20;
