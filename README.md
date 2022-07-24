@@ -58,3 +58,9 @@ mlflow server --backend-store-uri sqlite:///expt.db --default-artifact-root "fil
 
 * default-artifact-root: Directory in which to store artifacts for any new experiments created
 
+### Training Pipeline
+
+**Defining and Configuring pipeline.yaml**
+
+A Ploomber pipeline is a .yaml file that contains tasks and relationships between tasks. Lets define our training pipeline in the pipeline.yaml file.
+
