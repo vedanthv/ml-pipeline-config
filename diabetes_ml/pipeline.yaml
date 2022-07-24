@@ -1,32 +1,28 @@
 meta:
   extract_upstream: False
-
 tasks:
-  - source : tasks/clean_data.ipynb
-    name : clean
-    product: 
-      nb : products/clean_train_data.ipynb 
+  - source: tasks/clean_data.ipynb
+    name: clean
+    product:
+      nb: products/clean_train_data.ipynb
       data: products/cleaned_train_data.csv
     params:
       input_path: '{{root}}\\input_data\\diabetes_train.csv'
-
-  - source : tasks/visualize_data.ipynb
-    name : visualize
-    upstream : ['clean']
+  - source: tasks/visualize_data.ipynb
+    name: visualize
+    upstream: ['clean']
     product:
-       nb: products/visualize_data.ipynb
+      nb: products/visualize_data.ipynb
   - source: tasks/train_model.ipynb
     name: train
     upstream: ['clean']
     product:
       nb: products/train_model.ipynb
       config: products/config.pkl
-
     params:
-    mlflow_tracking_uri: <http://127.0.0.1:5000>
-    experiment_name: 'diabetes-expt'
-    train_size: 0.8
-    fix_imbalance: True
-    numeric_imputation: median
-    include_models: ['rf', 'lightgbm', 'lr']
-
+      mlflow_tracking_uri: <http://127.0.0.1:5000>
+      experiment_name: 'diabetes-expt'
+      train_size: 0.8
+      fix_imbalance: True
+      numeric_imputation: median
+      include_models: ['rf', 'lightgbm', 'lr']
