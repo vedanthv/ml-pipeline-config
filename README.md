@@ -1,5 +1,4 @@
 ﻿# ML Pipeline Demo Configuration with MLFlow, PyCaret and Ploomber
-Blog reference [link](https://towardsdatascience.com/machine-learning-pipeline-with-ploomber-pycaret-and-mlflow-db6e76ee8a10)
 
 This is a demo of an ML Pipeline with MLFlow, PyCaret and Ploomber libraries.
 
