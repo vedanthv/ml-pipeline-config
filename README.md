@@ -34,7 +34,9 @@ Let’s dive into an example. We will be using the Pima Indian Diabetes Dataset 
 
 Ploomber offers command line which creates a barebone project directory structure.
 
-```ploomber scaffold <folder_name> --empty
+```
+ploomber scaffold <folder_name> --empty
+
 ```
 
 ##### What are each of the directories in ```diabetes_ml```?
@@ -52,7 +54,8 @@ input_data: stores raw data
 Lets launch a MLFlow tracking server on localhost to log the experiments.
 
 ```cd sample-ml/mlflow
-mlflow server --backend-store-uri sqlite:///expt.db --default-artifact-root "file:\\My Drive\\Data-Science\\Projects\\ploomber\\sample-ml\\mlflow\\ml-artifacts"```
+mlflow server --backend-store-uri sqlite:///expt.db --default-artifact-root "file:\\My Drive\\Data-Science\\Projects\\ploomber\\sample-ml\\mlflow\\ml-artifacts"
+```
 
 * backend-store-uri: URI to which to persist experiment and run data. We are using an SQLite database for this.
 
