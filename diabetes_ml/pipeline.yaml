@@ -20,9 +20,11 @@ tasks:
       nb: products/train_model.ipynb
       config: products/config.pkl
     params:
-      mlflow_tracking_uri: <http://127.0.0.1:5000>
+      mlflow_tracking_uri: http://127.0.0.1:5000
       experiment_name: 'diabetes-expt'
       train_size: 0.8
       fix_imbalance: True
+      fold_shuffle: True
+      fold: 3
       numeric_imputation: median
       include_models: ['rf', 'lightgbm', 'lr']
