@@ -26,5 +26,13 @@ Now that we understand what each of the tool does, if you haven’t already gues
 
 ### Project Description
 
-Let’s dive into an example. We will be using the Pima Indian Diabetes Dataset[4] from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset.
+Let’s dive into an example. We will be using the Pima Indian Diabetes Dataset from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset.
 
+### Complete Pipeline Config Steps and Flow
+
+##### Project Directory Structure
+
+Ploomber offers command line which creates a barebone project directory structure.
+
+```ploomber scaffold <folder_name> --empty
+```
