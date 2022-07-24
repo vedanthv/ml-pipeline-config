@@ -9,3 +9,9 @@ tasks:
       data: products/cleaned_train_data.csv
     params:
       input_path: '{{root}}\\input_data\\diabetes_train.csv'
+
+  - source : tasks/visualize_data.ipynb
+    name : visualize
+    upstream : ['clean']
+    product:
+       nb: products/visualize_data.ipynb
