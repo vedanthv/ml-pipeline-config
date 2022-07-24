@@ -24,4 +24,7 @@ PyCaret is an open-source, low-code automated machine learning (AutoML) library 
 
 Now that we understand what each of the tool does, if you haven’t already guessed it, we will be cleaning the data with Pandas, training the models with PyCaret, logging our experiments with MLFlow and the entire pipeline will be orchestrated by Ploomber.
 
+### Project Description
+
+Let’s dive into an example. We will be using the Pima Indian Diabetes Dataset[4] from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset.
 
