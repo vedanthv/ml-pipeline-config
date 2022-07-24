@@ -34,5 +34,4 @@ Let’s dive into an example. We will be using the Pima Indian Diabetes Dataset 
 
 Ploomber offers command line which creates a barebone project directory structure.
 
-```ploomber scaffold <folder_name> --empty
-```
+```ploomber scaffold <folder_name> --empty```
