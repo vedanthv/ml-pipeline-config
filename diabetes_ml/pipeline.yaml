@@ -15,3 +15,10 @@ tasks:
     upstream : ['clean']
     product:
        nb: products/visualize_data.ipynb
+  - source: tasks/train_model.ipynb
+    name: train
+    upstream: ['clean']
+    product:
+      nb: products/train_model.ipynb
+      config: products/config.pkl
+
