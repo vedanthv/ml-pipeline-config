@@ -14,4 +14,10 @@ MLFlow is an open source platform to manage the ML lifecycle, including experime
 * MLFlow Tracking: Record and query experiments: code, data, config, and results
 * MLFlow Projects: Package data science code in a format to reproduce runs on any platform
 * MLFlow Models: Deploy machine learning models in diverse serving environments
-* Model Registry: Store, annotate, discover, and manage models in a central repository
+* Model Registry: Store, annotate, discover, and manage models in a central repository.
+
+3. PyCaret
+
+PyCaret is an open-source, low-code automated machine learning (AutoML) library in python. PyCaret helps to simplify the model training process by automating steps such as data pre-processing, hyperparameter optimization, stacking, blending and model evaluation. PyCaret is integrated with MLFlow and automatically log the run’s parameters, metrics and artifact onto MLFlow server.
+
+
