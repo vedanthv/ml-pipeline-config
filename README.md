@@ -20,4 +20,8 @@ MLFlow is an open source platform to manage the ML lifecycle, including experime
 
 PyCaret is an open-source, low-code automated machine learning (AutoML) library in python. PyCaret helps to simplify the model training process by automating steps such as data pre-processing, hyperparameter optimization, stacking, blending and model evaluation. PyCaret is integrated with MLFlow and automatically log the run’s parameters, metrics and artifact onto MLFlow server.
 
+### TLDR of Objective
+
+Now that we understand what each of the tool does, if you haven’t already guessed it, we will be cleaning the data with Pandas, training the models with PyCaret, logging our experiments with MLFlow and the entire pipeline will be orchestrated by Ploomber.
+
 
