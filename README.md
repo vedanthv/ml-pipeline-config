@@ -36,3 +36,13 @@ Ploomber offers command line which creates a barebone project directory structur
 
 ```ploomber scaffold <folder_name> --empty
 ```
+
+##### What are each of the directories in ```diabetes_ml```?
+
+tasks : contains Jupyter Notebooks to be executed
+
+products: stores executed Jupyter Notebooks, intermediate and final outputs
+
+mlflow: stores parameters, results and artifacts that were logged using MLFlow
+
+input_data: stores raw data
