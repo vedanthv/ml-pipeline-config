@@ -11,3 +11,7 @@ Ploomber is an open source framework used for building modularized data pipeline
 
 MLFlow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility, deployment, and a central model registry. MLFlow offers 4 different components:
 
+* MLFlow Tracking: Record and query experiments: code, data, config, and results
+* MLFlow Projects: Package data science code in a format to reproduce runs on any platform
+* MLFlow Models: Deploy machine learning models in diverse serving environments
+* Model Registry: Store, annotate, discover, and manage models in a central repository
