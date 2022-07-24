@@ -46,3 +46,15 @@ products: stores executed Jupyter Notebooks, intermediate and final outputs
 mlflow: stores parameters, results and artifacts that were logged using MLFlow
 
 input_data: stores raw data
+
+### MLFlow Server
+
+Lets launch a MLFlow tracking server on localhost to log the experiments.
+
+```cd sample-ml/mlflow
+mlflow server --backend-store-uri sqlite:///expt.db --default-artifact-root "file:\\My Drive\\Data-Science\\Projects\\ploomber\\sample-ml\\mlflow\\ml-artifacts"```
+
+* backend-store-uri: URI to which to persist experiment and run data. We are using an SQLite database for this.
+
+* default-artifact-root: Directory in which to store artifacts for any new experiments created
+
