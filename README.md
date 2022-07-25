@@ -114,3 +114,17 @@ Ploomber helps to populate input (aka upstream) and output (aka product) path fo
 * Setup PyCaret for training
 * Save PyCaret setup configurations
 * Train, tune and finalize models
+
+#### Parameters for the setup command of PyCaret
+
+* data : the training DataFrame
+* target: column name of the target variable
+* train_size defined the ratio of the training DataFrame to be used for training. The remaining will be used as the holdout set.
+* shuffle_fold: set as True to shuffle the data while doing cross validation
+* html: Set as False to prevent runtime display of monitor
+* silent: Set as True to skip the confirmation of input data types
+* experiment_name: MLFlow experiment name
+* log_experiment: Set as True to log metrics, parameters and artifacts to MLFlow server
+* fix_imbalance: Set as True to balance the distribution of the target class. SMOTE is applied by default to create synthetic * datapoints for the minority class
+* numeric_imputation: Imputation method for numerical values e.g. mean or median or zero
+* session_id: Controls the randomness of an experiment. Use to generate reproducible experiments
