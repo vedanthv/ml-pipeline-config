@@ -28,3 +28,5 @@ tasks:
       fold: 3
       numeric_imputation: median
       include_models: ['rf', 'lightgbm', 'lr']
+      n_select: 1
+      sort : 'AUC'
