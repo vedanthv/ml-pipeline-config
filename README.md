@@ -101,3 +101,7 @@ ploomber nb --inject
 
 Ploomber helps to populate input (aka upstream) and output (aka product) path for each notebook based on the pipeline.yaml file with cell injection. A new “parameter” cell is injected into the notebook with the product and upstream information we defined earlier. The first 3 cells are not useful and we can delete them.
 
+#### Creating the Notebooks
+
+* In the clean_data.ipynb script, we have imputed the NaN values with median imputer
+* In the visualize.iipynb script, we have used pandas_profiling to generate the plots
