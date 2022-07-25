@@ -128,3 +128,14 @@ Ploomber helps to populate input (aka upstream) and output (aka product) path fo
 * fix_imbalance: Set as True to balance the distribution of the target class. SMOTE is applied by default to create synthetic * datapoints for the minority class
 * numeric_imputation: Imputation method for numerical values e.g. mean or median or zero
 * session_id: Controls the randomness of an experiment. Use to generate reproducible experiments
+
+PyCaret’s ```compare_models``` function trains and evaluates performance of all estimators available in the model library using cross validation and outputs a score grid with the average cross validated score. These estimators are trained on their default hyperparameters, there are no hyperparameter tuning at this stage.
+
+##### Parameters:
+
+* include_models: selected list of models to train and evaluate. Note that we have passed this parameter into the notebook from * pipeline.yaml using cell injection.
+* sort: sort the output results based on selected metric
+* n_select: select top n models to return
+We have defined n_select as 1, hence only the best model based on AUC is selected.
+
+
