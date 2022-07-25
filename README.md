@@ -91,3 +91,13 @@ ploomber scaffold
 
 We are using ploomber scaffold again, however instead of creating a project directory structure with an empty pipeline.yaml file, Ploomber reads the existing pipeline.yaml file and creates the missing Jupyter Notebooks. Now there are 3 new Jupyter Notebooks in the tasks folder.
 
+### Injecting the Notebooks
+
+We have previously defined the upstream and product information in pipeline.yaml. Lets transfer the information into the Jupyter Notebook using cell injection.
+
+```
+ploomber nb --inject
+```
+
+Ploomber helps to populate input (aka upstream) and output (aka product) path for each notebook based on the pipeline.yaml file with cell injection. A new “parameter” cell is injected into the notebook with the product and upstream information we defined earlier. The first 3 cells are not useful and we can delete them.
+
