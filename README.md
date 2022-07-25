@@ -105,3 +105,12 @@ Ploomber helps to populate input (aka upstream) and output (aka product) path fo
 
 * In the clean_data.ipynb script, we have imputed the NaN values with median imputer
 * In the visualize.iipynb script, we have used pandas_profiling to generate the plots
+
+**Steps to Train Model**
+
+* Import packages
+* set the MLFlow tracking URI
+* Read the cleaned data that was output by clean_data.ipynb
+* Setup PyCaret for training
+* Save PyCaret setup configurations
+* Train, tune and finalize models
