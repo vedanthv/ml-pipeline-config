@@ -138,4 +138,9 @@ PyCaret’s ```compare_models``` function trains and evaluates performance of al
 * n_select: select top n models to return
 We have defined n_select as 1, hence only the best model based on AUC is selected.
 
+#### Finalizing the model
+
+Next we perform hyperparameter tuning on the Logistic Regression model using tune_model, select the best performing model based on AUC and finalize the model. Pycaret’s finalize_model function trains a given estimator on the entire dataset including the holdout set.
+
+
 
