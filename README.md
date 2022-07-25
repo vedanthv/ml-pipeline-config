@@ -142,5 +142,8 @@ We have defined n_select as 1, hence only the best model based on AUC is selecte
 
 Next we perform hyperparameter tuning on the Logistic Regression model using tune_model, select the best performing model based on AUC and finalize the model. Pycaret’s finalize_model function trains a given estimator on the entire dataset including the holdout set.
 
+```
+final_model = finalize_model(tune_model(best, choose_better = True, optimize = 'AUC'))
+```
 
 
