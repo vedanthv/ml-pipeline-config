@@ -1,4 +1,4 @@
-﻿# ML Pipeline Demo Configuration with MLFlow, PyCaret and Ploomber
+# ML Pipeline Demo Configuration with MLFlow, PyCaret and Ploomber
 
 This is a demo of an ML Pipeline with MLFlow, PyCaret and Ploomber libraries.
 
@@ -146,4 +146,4 @@ Next we perform hyperparameter tuning on the Logistic Regression model using tun
 final_model = finalize_model(tune_model(best, choose_better = True, optimize = 'AUC'))
 ```
 
-
+Here is the blog link I referred : [Piplines with PLoomber](https://towardsdatascience.com/machine-learning-pipeline-with-ploomber-pycaret-and-mlflow-db6e76ee8a10)
