@@ -148,5 +148,3 @@ Next we perform hyperparameter tuning on the Logistic Regression model using tun
 ```
 final_model = finalize_model(tune_model(best, choose_better = True, optimize = 'AUC'))
 ```
-
-Here is the blog link I referred : [Piplines with Ploomber](https://towardsdatascience.com/machine-learning-pipeline-with-ploomber-pycaret-and-mlflow-db6e76ee8a10)
